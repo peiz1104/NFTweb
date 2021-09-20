@@ -38,7 +38,7 @@ export default defineComponent({
         const offsetTop = offset.top;
         const offsetBottom = offset.bottom;
         const offsetHeight = offset.height;
-        const status = offsetHeight + offsetTop > 10;
+        const status = offsetHeight + offsetTop > 80;
        return status &&offsetTop <= window.innerHeight && offsetBottom >= 0
     }
     const headFixed = computed(()=>scrollHeight.value>60)
