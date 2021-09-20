@@ -492,6 +492,7 @@
             width: 100%;
             object-fit: cover;
             border-radius: 4%;
+            user-select: none;
             &:hover{
                 animation: 1s ease 0s infinite alternate none running bounce;
             }
@@ -499,6 +500,20 @@
     }
     .marginmax{
         margin: 20px 0 30px;
+    }
+    .splitline{
+        background-color: rgba(255, 255, 255, 0.2);
+        height: 5px;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    .footerboox{
+        color: rgb(255, 255, 255);
+        margin: 20px 0px;
+        font-size: 18px;
+        text-align: center;
     }
 }
 @keyframes bounce {
