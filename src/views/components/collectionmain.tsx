@@ -22,7 +22,7 @@ export default defineComponent({
                 <div class="main-content">
                     <div class="top-title">
                         <h2 class="titleh2">{state.text}</h2>
-                        <button class="morebtn">Show More</button>
+                        {/* <button class="morebtn">Show More</button> */}
                     </div>
                     <p class="desbox">{state.desText}</p>
                     <div class="imgbox">

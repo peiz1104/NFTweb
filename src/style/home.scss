@@ -51,6 +51,7 @@
         font-weight: 500;
         border: 5px solid rgb(0, 0, 0);
         cursor: pointer;
+        visibility: hidden;
 
         &:hover{
             transition: all 0.2s ease-in-out 0s;

@@ -19,8 +19,8 @@ export default defineComponent({
     },
     setup(prop){
         const navList = reactive({
-            activeIndex:11,
-            list:[{id:11,name:'Home',eleId:'home'},{id:22,name:'Collections',eleId:'collection'},{id:33,name:'Roadmap',eleId:'roadmap'},{id:44,name:'Team',eleId:'team'}]
+            activeIndex:22,
+            list:[{id:22,name:'Collections',eleId:'collection'},{id:33,name:'Roadmap',eleId:'roadmap'},{id:44,name:'Team',eleId:'team'}]
         })
         watch([()=>prop.viewStatus],([newval])=>{
             if(newval.homeView){

@@ -1,6 +1,5 @@
 import { computed, defineComponent, onBeforeUnmount, onMounted, reactive, ref } from 'vue';
 import NavBox from './components/nav';
-import HomeMain from './components/homemain';
 import CollectionMain from './components/collectionmain';
 import RoadmapMain from './components/roadmapmain';
 import TeamMain from './components/teammain';
@@ -24,7 +23,6 @@ export default defineComponent({
             if (Date.now() - lastTime >= 500) {
               scrollHeight.value = document.documentElement.scrollTop
               lastTime = Date.now();
-              viewStatus.homeView = isInViewPort(document.getElementById('home'))
               viewStatus.collView = isInViewPort(document.getElementById('collection'))
               viewStatus.roadView = isInViewPort(document.getElementById('roadmap'))
               viewStatus.teamView = isInViewPort(document.getElementById('team'))
@@ -53,7 +51,6 @@ export default defineComponent({
         <NavBox fixedStatus={headFixed.value} viewStatus={{...viewStatus}}></NavBox>
         <main>
           <section>
-            <HomeMain></HomeMain>
             <CollectionMain></CollectionMain>
             <RoadmapMain></RoadmapMain>
             <TeamMain></TeamMain>
